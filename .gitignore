@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.bak*
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本机工作说明，不公开
+CLAUDE.md

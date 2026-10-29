@@ -1,0 +1,15 @@
+{
+  "name": "lotuseeds",
+  "description": "Chemistry teaching tools for Claude Code by Lian Mingming (School of Pharmacy, Harbin Medical University-Daqing)",
+  "owner": {
+    "name": "Lian Mingming (廉明明)",
+    "email": "lotuseeds@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "chem-depict",
+      "source": "./plugins/chem-depict",
+      "description": "SMILES → ACS-style medicinal-chemistry structure boards (HTML) with one-click copy of SMILES / 600-dpi transparent image / SVG vector"
+    }
+  ]
+}

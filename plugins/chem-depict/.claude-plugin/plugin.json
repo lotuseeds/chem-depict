@@ -1,6 +1,6 @@
 {
   "name": "chem-depict",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "SMILES → ACS Document 1996-style medicinal-chemistry structure boards (HTML): ring templates, textbook morphinan layout, element colours, key hydrogens only, broken crossing bonds, ring/bond highlights, one-click copy of SMILES / 600-dpi transparent image / SVG vector.",
   "author": {
     "name": "Lian Mingming (廉明明), School of Pharmacy, Harbin Medical University-Daqing",

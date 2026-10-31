@@ -47,6 +47,7 @@ description: 药物化学结构式图板（medicinal-chemistry structure board�
 - **吗啡烷**（吗啡、可待因、海洛因、纳洛酮……）：`morphinan_classic`；乙胺桥从上方压过 C9–C10（自动剪断）。RDKit 默认与环模板画法会让 C16 与 C8 近乎重合，PubChem 2D 坐标也有近接，均不可用。
 - **托品烷**（东莨菪碱、阿托品）：环模板即可。
 - **托品烷季铵盐**（丁溴东莨菪碱等）：骨架、甲基、酯侧链 `align_to` 母体叔胺；第二个 N-取代基手工摆——首键近竖直向上压过顶部环键再折向左，甲基环内短线朝右下，对离子放右下远离 OH。现成坐标 `templates/butylscopolamine.mol`（`cs.from_molfile(path, smi)` 读入并核对 SMILES）。注意子结构对齐会把母体 N-CH₃ 错配到丁基首碳，须强制甲基对甲基。
+- **双季铵长链二酯**（阿曲库铵等）：`templates/atracurium.mol`；左右镜像，连接链为水平锯齿，两 C=O 朝下，二甲氧苄基垂在两端下方。
 - **一般手工微调**：`cs.coords(m)` 打印坐标（键长单位）→ `cs.place(m, {原子序: (x, y)})` → 再跑 `close_contacts`。
 
 ## 技术备忘

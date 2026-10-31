@@ -82,3 +82,7 @@ examples/                              示例图板与生成脚本
 许可：[MIT](LICENSE)
 
 致谢：结构式绘制基于 [RDKit](https://www.rdkit.org/)（BSD 许可），化合物数据来自 [PubChem](https://pubchem.ncbi.nlm.nih.gov/)。
+
+## Installing Arial (Linux)
+
+chemstyle uses Arial when it finds it (Windows/macOS system fonts, or `/usr/share/fonts/truetype/msttcorefonts/Arial.ttf` on Linux) and otherwise falls back to RDKit's built-in font. On Debian/Ubuntu install Microsoft core fonts yourself (e.g. `sudo apt install ttf-mscorefonts-installer`, then `fc-cache -f`). This repository does not ship font files.
